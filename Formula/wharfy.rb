@@ -1,27 +1,27 @@
 class Wharfy < Formula
   homepage "https://github.com/ShiroDoromoto/wharfy"
-  version "0.2.1"
+  version "0.2.2"
   license "AGPL-3.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.2.1/wharfy_0.2.1_darwin_arm64.tar.gz"
-      sha256 "373e673df7ccdbfe052147842c5509bdc74cc64ebb53ff9bb68b8502363d82b6"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.2.2/wharfy_0.2.2_darwin_arm64.tar.gz"
+      sha256 "0cc27bfc34d7c78f82e6831a74ee6b02b65187527aa4f6ed1729804434569e16"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.2.1/wharfy_0.2.1_darwin_amd64.tar.gz"
-      sha256 "8a625241b92a50f71f223678e09a1b8c73b3df4a6d774244a8ad0da66969336c"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.2.2/wharfy_0.2.2_darwin_amd64.tar.gz"
+      sha256 "bb5c04032d76d6f9bcb9f7eeb9fe42a87d7536402f23206518d61611da20e178"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.2.1/wharfy_0.2.1_linux_arm64.tar.gz"
-      sha256 "11aa646d49f8706e6772ca650f14711d97a62421b4c690bf8cc6a1c2fc98a1ea"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.2.2/wharfy_0.2.2_linux_arm64.tar.gz"
+      sha256 "69105a2a972347d57504d630af6d067bc8ca8bcda8f8f3e8def8a1009429a9bd"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.2.1/wharfy_0.2.1_linux_amd64.tar.gz"
-      sha256 "848899afa069befa722a6171484c52325c370f28ac0ece760e437d77c140234a"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.2.2/wharfy_0.2.2_linux_amd64.tar.gz"
+      sha256 "cd835a0a72e26ae6e4e86f4c8e1bf5eb3b84db1894c741d0577a01c2ffc0e7a2"
     end
   end
 
@@ -30,6 +30,6 @@ class Wharfy < Formula
   end
 
   test do
-    assert_match "0.2.1", shell_output("#{bin}/wharfy version")
+    assert_match "0.2.2", shell_output("#{bin}/wharfy version")
   end
 end
