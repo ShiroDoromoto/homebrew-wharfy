@@ -1,27 +1,27 @@
 class Wharfy < Formula
   homepage "https://github.com/ShiroDoromoto/wharfy"
-  version "0.10.0"
+  version "0.11.0"
   license "AGPL-3.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.10.0/wharfy_0.10.0_darwin_arm64.tar.gz"
-      sha256 "486a27e5df7ef7092d409780eb02624bbf0e2e356d6a4830d0b438316f1434bc"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.11.0/wharfy_0.11.0_darwin_arm64.tar.gz"
+      sha256 "4c2e2e91827d6436479d01188fbdbf605cd60954e71413f9f65d1f06eeff42af"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.10.0/wharfy_0.10.0_darwin_amd64.tar.gz"
-      sha256 "93fd33b79121deb086456bd5d6b33ceb16ceec8f61c2306d7ea6899f0781f62a"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.11.0/wharfy_0.11.0_darwin_amd64.tar.gz"
+      sha256 "0fb5a7ef1db15d39b8c33cfdec5462e01814baa0aea6a30213848daed8d280e4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.10.0/wharfy_0.10.0_linux_arm64.tar.gz"
-      sha256 "33705ccb553f8833bb2d65543044eb37ab73416038162abe7d638bd985e2560f"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.11.0/wharfy_0.11.0_linux_arm64.tar.gz"
+      sha256 "593cdf255116917e96306a8d20bdeab348dac7a08c55981291f33717ed0f50b3"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.10.0/wharfy_0.10.0_linux_amd64.tar.gz"
-      sha256 "c08863e032b8f4ab900d002d1f7018952ea40644aec802210d0c2b9e4869e6f5"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.11.0/wharfy_0.11.0_linux_amd64.tar.gz"
+      sha256 "3bc713f3eb044720619e5a7e7b61d86406efadcc42d8ed99d401cd05ebb7df8e"
     end
   end
 
@@ -30,6 +30,6 @@ class Wharfy < Formula
   end
 
   test do
-    assert_match "0.10.0", shell_output("#{bin}/wharfy version")
+    assert_match "0.11.0", shell_output("#{bin}/wharfy version")
   end
 end
