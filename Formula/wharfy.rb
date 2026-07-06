@@ -1,27 +1,27 @@
 class Wharfy < Formula
   homepage "https://github.com/ShiroDoromoto/wharfy"
-  version "0.9.0"
+  version "0.10.0"
   license "AGPL-3.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.9.0/wharfy_0.9.0_darwin_arm64.tar.gz"
-      sha256 "970039de2155c3d0e34276fac0d0c1caf5ce93126aea928ce1ad44392cc28cdd"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.10.0/wharfy_0.10.0_darwin_arm64.tar.gz"
+      sha256 "486a27e5df7ef7092d409780eb02624bbf0e2e356d6a4830d0b438316f1434bc"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.9.0/wharfy_0.9.0_darwin_amd64.tar.gz"
-      sha256 "072a2cf3e18d32e02ae4a23dc56bdbd2601d03c6b37169d5c138fa79ffb695d3"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.10.0/wharfy_0.10.0_darwin_amd64.tar.gz"
+      sha256 "93fd33b79121deb086456bd5d6b33ceb16ceec8f61c2306d7ea6899f0781f62a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.9.0/wharfy_0.9.0_linux_arm64.tar.gz"
-      sha256 "63f59653a10eddb3607fa92fb21de967c5f70e3a667549c859a903cda8682f7d"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.10.0/wharfy_0.10.0_linux_arm64.tar.gz"
+      sha256 "33705ccb553f8833bb2d65543044eb37ab73416038162abe7d638bd985e2560f"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.9.0/wharfy_0.9.0_linux_amd64.tar.gz"
-      sha256 "dc8d0378fa8f28bcbfd3655641c79c2f9ec918193392262395ed120beda2b791"
+      url "https://github.com/ShiroDoromoto/wharfy/releases/download/v0.10.0/wharfy_0.10.0_linux_amd64.tar.gz"
+      sha256 "c08863e032b8f4ab900d002d1f7018952ea40644aec802210d0c2b9e4869e6f5"
     end
   end
 
@@ -30,6 +30,6 @@ class Wharfy < Formula
   end
 
   test do
-    assert_match "0.9.0", shell_output("#{bin}/wharfy version")
+    assert_match "0.10.0", shell_output("#{bin}/wharfy version")
   end
 end
